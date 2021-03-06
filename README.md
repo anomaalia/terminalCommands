@@ -1,4 +1,5 @@
 # macOS terminal Commands
+My own version of [macOS Cheatsheet](https://www.zoocoup.org/exhibits/cheatsheets/macos.html)
 
 #### Find an .app BundleID
 `mdls -name kMDItemCFBundleIdentifier -r SomeApp.app`
