@@ -1,0 +1,2 @@
+# terminalsCommands
+macOS terminal commands
