@@ -4,5 +4,5 @@
 `mdls -name kMDItemCFBundleIdentifier -r SomeApp.app`
 
 #### Deleting an user in terminal
-dscl . -delete /Users/JohnDoe
-dscl . -create /Users/bill PrimaryGroupID 20
+`dscl . -delete /Users/JohnDoe`
+`dscl . -create /Users/bill PrimaryGroupID 20`
