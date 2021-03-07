@@ -16,7 +16,7 @@ sudo dscl . list groups gid
 List cron jobs`crontab -l`and to delete `crontab -r`
 
 #### LaunchCTL
-You typically want to use launchctl load -w and launchctl unload -w. Start and stop are usually reserved for testing or debugging a job.
+You typically want to use `launchctl load -w` and `launchctl unload -w`.
 - `launchctl start <label>` Starts the job. This is usually reserved just for testing or debugging a particular job.
 - `launchctl stop <label>` Stops the job. Opposite of start, and it's possible that the job will immediately restart if the job is configured to stay running.
 - `launchctl remove <label>` Removes the job from launchd, but asynchronously. It will not wait for the job to actually stop before returning, so no error handling on this one.
