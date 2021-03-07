@@ -24,3 +24,11 @@ You typically want to use `launchctl load -w` and `launchctl unload -w`.
 - `launchctl unload <path>` Stops and unloads the job. The job will still restart on the next login/reboot.
 - `launchctl load -w <path>` Loads and starts the job while also marking the job as "not disabled." The job will restart on the next login/reboot.
 - `launchctl unload -w <path>` Stops and unloads and disables the job. The job will NOT restart on the next login/restart.
+
+#### Check SSH status
+Check SSH status and turn it off or on.
+```
+sudo systemsetup -getremotelogin
+sudo systemsetup -setremotelogin on
+sudo systemsetup -f -setremotelogin off
+```
